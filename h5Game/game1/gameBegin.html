@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<meta name="format-detection" content="telephone = no">
+		<meta name="format-detection" content="email = no">
+		<title>$!{activityInfo.pageTitle}</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/game.css" />
+		<script type="text/javascript">
+			document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+		</script>
+		<script src="js/jquery-3.0.0.min.js"></script>
+
+		
+	    <style>
+	    	body{
+	    		background:#f4c692;
+	    	}
+			
+	    </style>
+	</head>
+	<body class="fs14 rel">
+		<div class="bar">
+			<div class="score-box">
+				<!--头像-->
+	    		<a class="avatar_wd">
+	    			<img class="imgWidth100 userImgMy" id="userImg" src="img/gg01.jpg" />
+	    		</a>
+				<div class="score-css">总分：<span class="score">0</span></div>
+			</div>
+		</div>
+		
+		<div class="countdown-box"><span class="countdown">15</span><span class="second">S</span></div>
+		<p class="score-add">+<span id="scoreper">5</span></p>
+		<div class="game-box">
+    	</div>
+    	
+    	 <div class="footer">
+	        <div class="btn-list flex">
+		    	<a class="btn-left" href="javascript:void(0);"></a>
+		    	<a class="btn-right" href="javascript:void(0);"></a>
+	    	</div>	
+    	</div>
+    
+		
+		<!--ready go-->
+		<div class="mask go-start">
+			<div class="css-commom css-readygo center rel">
+				<img src="img/introduce.png" class="title1"/>
+				<p>新的辉煌需要你来创造</p>
+				<p>点击按钮开始游戏吧</p>
+				<a href="javascript:void(0)" class="js-go-btn btn css-go-btn"></a>
+			</div>
+		</div>
+		
+		
+		<script>
+			document.addEventListener('touchstart', function () {});
+		</script>
+		
+		<script src="js/game.js"></script>
+	</body>
+</html>
